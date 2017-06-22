@@ -35,6 +35,11 @@
             android:layout_height="wrap_content"
             android:id="@+id/main_btn_viewpager"
             android:text="viewpager"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_btn_progress"
+            android:text="progress"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"

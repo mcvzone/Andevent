@@ -24,7 +24,8 @@
         <activity android:name=".WebBrowserActivity" />
         <activity android:name=".AnimationActivity" />
         <activity android:name=".SlidingActivity" />
-        <activity android:name=".ViewPagerActivity"></activity>
+        <activity android:name=".ViewPagerActivity" />
+        <activity android:name=".ProgressSeekActivity"></activity>
     </application>
 
 </manifest>

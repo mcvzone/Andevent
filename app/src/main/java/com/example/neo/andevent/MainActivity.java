@@ -11,11 +11,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         findViewById(R.id.main_btn_touch).setOnClickListener(this);
         findViewById(R.id.main_btn_browser).setOnClickListener(this);
         findViewById(R.id.main_btn_animation).setOnClickListener(this);
         findViewById(R.id.main_btn_sliding).setOnClickListener(this);
         findViewById(R.id.main_btn_viewpager).setOnClickListener(this);
+        findViewById(R.id.main_btn_progress).setOnClickListener(this);
+
     }
 
     @Override
@@ -46,6 +49,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(getApplicationContext(), ViewPagerActivity.class);
                 startActivity(intent);
                 break;
+
+            case R.id.main_btn_progress:
+                intent = new Intent(getApplicationContext(), ProgressSeekActivity.class);
+                startActivity(intent);
+                break;
+
         }
     }
 }
