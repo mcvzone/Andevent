@@ -27,7 +27,8 @@ public class WebBrowserActivity extends AppCompatActivity {
                 WebSettings settings = wv.getSettings();
                 settings.setJavaScriptEnabled(true);
                 wv.setWebViewClient(new WebViewClient());
-                wv.loadUrl("http://m.naver.com");
+                //wv.loadUrl("http://m.naver.com");
+                wv.loadUrl("file:///android_asset/sample.html");
             }
         });
     }

@@ -20,6 +20,21 @@
             android:layout_height="wrap_content"
             android:id="@+id/main_btn_browser"
             android:text="browser"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_btn_animation"
+            android:text="animation"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_btn_sliding"
+            android:text="sliding"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_btn_viewpager"
+            android:text="viewpager"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"

@@ -13,7 +13,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         findViewById(R.id.main_btn_touch).setOnClickListener(this);
         findViewById(R.id.main_btn_browser).setOnClickListener(this);
-
+        findViewById(R.id.main_btn_animation).setOnClickListener(this);
+        findViewById(R.id.main_btn_sliding).setOnClickListener(this);
+        findViewById(R.id.main_btn_viewpager).setOnClickListener(this);
     }
 
     @Override
@@ -27,6 +29,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.main_btn_browser:
                 intent = new Intent(getApplicationContext(), WebBrowserActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.main_btn_animation:
+                intent = new Intent(getApplicationContext(), AnimationActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.main_btn_sliding:
+                intent = new Intent(getApplicationContext(), SlidingActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.main_btn_viewpager:
+                intent = new Intent(getApplicationContext(), ViewPagerActivity.class);
                 startActivity(intent);
                 break;
         }
