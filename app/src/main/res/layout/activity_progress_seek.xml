@@ -7,6 +7,7 @@
     tools:context="com.example.neo.andevent.ProgressSeekActivity">
 
     <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bar_pb_progressbar"
@@ -23,4 +24,23 @@
         android:layout_height="wrap_content"
         android:id="@+id/bar_bt_execute2"
         android:text="execute 2"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="설정값 : "
+        android:id="@+id/bar_tx_textView"/>
 </LinearLayout>
